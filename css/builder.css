@@ -1,0 +1,32 @@
+.object:hover::before {
+  top: -50px;
+  opacity: 1;
+}
+
+
+.object::before {
+  margin: auto;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  border-radius: 200px;
+  content: 'Double click to move object';
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #00000022;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: calc(50% - 120px);
+  top: 20px;
+  opacity: 0;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+
+.object-info {
+  height: 0px;
+  width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
